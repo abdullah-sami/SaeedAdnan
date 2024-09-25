@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A freelance 3D artist specializing in modeling, animation, and texturing for games and films. With expertise in Blender and Maya, I bring creative ideas to life with a strong focus on detail and storytelling.">
+
+    <title>Saeed Adnan</title>
+
+
+    
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Electrolize&family=Gemunu+Libre:wght@200..800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Electrolize&family=Gemunu+Libre:wght@200..800&display=swap">
+    </noscript>
+
+    <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+
+
+    <link rel="preload" href="resources/css/theme.css" 
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="resources/css/style.css" 
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+
+</head>
+
+<body onload="import_contents(); fetch_tags(); ">
+
+
+
+
+    
+
+    <main>
+        <section class="section_1" id="section_1">
+
+            <div class="social border">
+                <span class="social_ico_1">
+                    <a href="https://facebook.com/adnan.saeed.osama">
+                        <img src="resources/img/fb.png" alt="" id="fb-ico">
+                    </a>
+                </span>
+                <span class="social_ico_2">
+                    <a href="https://instagram.com/adnan.saeed.osama">
+                        <img src="resources/img/insta.png" alt="">
+                    </a>
+                </span>
+                <span class="social_ico_3">
+                    <a href="https://x.com/adnansaeedosama">
+                        <img src="resources/img/twitter.png" alt="">
+                    </a>
+                </span>
+                <span class="social_ico_4">
+                    <a href="mailto:adnan.saeed.osama@gmail.com">
+                        <img src="resources/img/email.png" alt="">
+                    </a>
+                </span>
+            </div>
+
+            <div class="profile border" >
+                <img src="resources/img/profile_pic.jpg" alt="" class="profile_pic">
+                <div class="desc">
+                    <p class="profile_ttl">I'm</p>
+                    <h1 class="profile_name">Saeed Adnan</h1>
+                </div>
+                <div class="bio">
+                    <p class="profile_bio">A freelance 3D artist specializing in modeling, animation, and texturing for
+                        games and films. With expertise in Blender and Maya, I bring creative ideas to life with a
+                        strong focus on detail and storytelling. Let’s collaborate to transform your vision into
+                        engaging 3D experiences!</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <section class="section_2" id="section_2">
+
+            <div class="gallery sec_2_itm border" id="gallery">
+
+
+
+                <div class="gallery_header">
+
+                    <h2>
+                        Showcase
+                    </h2>
+
+                    <div class="gallery_open_btn" onclick="gallery_viewer_open();">
+                        There's more <span id="gallery_open_btn_arrow" style="display: inline-block;">→</span>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="gallery_window" id="gallery_window">
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                    <div class="gallery_itms"></div>
+
+                </div>
+
+            </div>
+
+            <div class="marketplace sec_2_itm border" id="marketplace">
+
+                <p class="marketplace_head">I'm available at :</p>
+
+                <ul class="marketplaces">
+
+                    <li>
+                        <a href="">
+                            <span>
+                                <img src="resources/img/upwork.png" alt="">
+                                <p>Upwork</p>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span>
+                                <img src="resources/img/toptal.png" alt="">
+                                <p>Toptal</p>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span>
+                                <img src="resources/img/peopleperhour.jpg" alt="">
+                                <p>Peopleperhour</p>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span>
+                                <img src="resources/img/sketchfab.png" alt="">
+                                <p>Sketchfab</p>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <div class="gallery_viewer" id="gallery_viewer">
+
+
+        <section class="gallery_viewer_section gallery_viewer_section_left">
+
+            <div class="gallery_viewer_img_container">
+
+                <img src="resources/img/artworks/17.jpg" alt="" id="gallery_viewer_img">
+
+                <button class="gallery_viewer_img_full_screen_btn" id="gallery_viewer_img_full_screen_btn" onclick="gallery_viewer_full_screen();">
+                    <img src="resources/img/expand.png" alt="">
+                </button>
+
+            </div>
+
+            <div class="gallery_viewer_desc_container">
+
+                <h2 id="gallery_viewer_desc_ttl">Shields</h2>
+
+                <p id="gallery_viewer_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quidem atque pariatur!</p>
+
+                <span id="gallery_viewer_desc_container_tags">
+                    <button class="gallery_viewer_desc_tag img_tag_btn" data-img-tag="Assets">Assets</button>
+                    <button class="gallery_viewer_desc_tag img_tag_btn" data-img-tag="High-poly">High-poly</button>
+                </span>
+
+            </div>
+
+
+            <div class="gallery_viewer_img_full_screen" id="gallery_viewer_img_full_screen">
+                <img src="" alt="" id="gallery_viewer_img_full_screen_img">
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="gallery_viewer_section gallery_viewer_section_right">
+
+            <div class="gallery_tags">
+
+                <button class="gallery_tag img_tag_btn gallery_tag_selected" id="gallery_tag"
+                    data-img-tag="">All</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="Models">Models</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="Assets">Assets</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="Isometric">Isometric</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="Sci-fi">Sci-fi</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="High-poly">High-poly</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="Low-poly">Low-poly</button>
+                <button class="gallery_tag img_tag_btn" id="gallery_tag" data-img-tag="Untextured">Untextured</button>
+
+                
+                
+            </div>
+
+
+        <span class="masonry_gallery_container">
+            <div class="gallery_viewer_masonry_gallery masonry" id="gallery_viewer_masonry_gallery">
+
+                <!-- Gallery items will be dynamically added here -->
+                
+                
+                
+
+
+            </div>
+        </span>
+
+        </section>
+
+
+
+        <div class="gallery_viewer_close_btn" id="gallery_viewer_close_btn" onclick="gallery_viewer_close();">
+            <img src="resources/img/cross.png" alt="">
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer>
+
+
+        <div class="credits">© all rights ressesrved. By <a href="http://abdullahsami.rf.gd">Its_Me!</a></div>
+
+
+    </footer>
+
+
+
+    
+    
+    <script src="resources/js/content.man.js"></script>
+    <script src="resources/js/app.js"></script>
+    <script src="resources/js/tag.man.js"></script>
+
+    
+
+</body>
+
+</html>
