@@ -4,17 +4,17 @@ let gallery_imgs = [
   
   { src: `${root_dir}android_things.webp`, title: "Tech setup", desc: "A sleek collection of modern gadgets (not for a apple user) including a tablet, smartwatches, camera, earbuds, and a gaming phone, neatly arranged on a reflective surface.", tag: "Models Low-poly" },
   
-  { src: `${root_dir}shield.webp`, title: "Guardian Shields", desc: "A pair of sturdy wooden shields, each with a different design. The left shield features two metal braces for added protection, while the right shield has a central metal hub with a glowing orb in the center. The shields are said to be enchanted with protective magic, making them nearly impenetrable to enemy attacks.", tag: "Models Low-poly Weapon" },
+  { src: `${root_dir}Sword.webp`, title: "Flamefang", desc: " A sleek and stylish sword with a silver blade and a red and gold hilt. The pommel is shaped like a flame, and the guard is adorned with intricate engravings. The blade is said to be capable of cutting through steel like butter.", tag: "Assets High-poly Weapon Models" },
   
   { src: `${root_dir}HoverScout.webp`, title: "Explorer Robo", desc: "A cube-shaped robot with mechanical arms and a wheel for movement, traversing a mysterious and foggy landscape in a futuristic world.", tag: "Game Assets 3D" },
   
   { src: `${root_dir}futuristic_chess_console.webp`, title: "Sci-fi Chess Board", desc: "A high-tech, glowing chessboard with advanced mechanisms and bold geometric lines for futuristic gameplay.", tag: "Game Weapon Sci-fi" },
-  
-  { src: `${root_dir}Yellow_car_studio.webp`, title: "Volvo P1800 [Isometric]", desc: "A Volvo P1800 in a futuristic yellow studio, highlighting the timeless charm of vintage automotive design under modern lighting.", tag: "Assets High-poly Isometric" },
+
+  { src: `${root_dir}Headphone.webp`, title: "Tech and Treasure", desc: "A laptop with a vibrant, colorful display sits open on a desk, illuminated by the surrounding neon lights. Next to it lies a worn, leather-bound book titled 'The Treasure,' hinting at a hidden adventure. A pair of stylish headphones with a rainbow-colored LED strip rests nearby, ready to immerse the user in a world of music or gaming.", tag: "3D Models Sci-fi" },
   
   { src: `${root_dir}basketball_court.webp`, title: "BasketBall Court [Isometric]", desc: " A vibrant basketball court, adorned with dynamic graffiti and essential equipment, captures the essence of urban athleticism and community spirit.", tag: "Weapon Sci-fi Isometric" },
   
-  { src: `${root_dir}BedRoom.webp`, title: "BedRoom [Isometric]", desc: "A minimalist bedroom, bathed in soft blue hues, offers a tranquil escape with its clean lines, comfortable bedding,a prayer Jainamaj, and a touch of oriental charm.", tag: "Assets High-poly Isometric" },
+  { src: `${root_dir}Camera.webp`, title: "Lens of Possibilities", desc: "A Canon EOS 5D Mark IV camera surrounded by a variety of interchangeable lenses, all suspended in mid-air against a dark background. The image captures the versatility and creativity of photography, showcasing the different perspectives and focal lengths that can be achieved with a single camera body.", tag: "Models 3D Sci-fi" },
   
   { src: `${root_dir}home_office.webp`, title: "Home Office [Isometric]", desc: "A functional and inviting home office, featuring a minimalist desk, comfortable seating, and a well-stocked bookshelf, provides a productive and inspiring workspace.", tag: "Game Assets 3D Isometric" },
   
@@ -36,10 +36,10 @@ let gallery_imgs = [
   
   { src: `${root_dir}Spear.webp`, title: "Glaive of the Crimson Dawn", desc: "A fearsome polearm with a long, curved blade and a wooden shaft wrapped in red and gold cord. The blade's edge is serrated, and the tip is sharp and pointed. The weapon is said to have been forged in the heart of a volcano and imbued with the power of fire.", tag: "Models Low-poly Weapon" },
   
-  { src: `${root_dir}Sword.webp`, title: "Flamefang", desc: " A sleek and stylish sword with a silver blade and a red and gold hilt. The pommel is shaped like a flame, and the guard is adorned with intricate engravings. The blade is said to be capable of cutting through steel like butter.", tag: "Assets High-poly Weapon Models" },
+  { src: `${root_dir}shield.webp`, title: "Guardian Shields", desc: "A pair of sturdy wooden shields, each with a different design. The left shield features two metal braces for added protection, while the right shield has a central metal hub with a glowing orb in the center. The shields are said to be enchanted with protective magic, making them nearly impenetrable to enemy attacks.", tag: "Models Low-poly Weapon" },
   
   { src: `${root_dir}Sword_yellow.webp`, title: "Sunblade", desc: " A majestic sword with a long, straight blade that shimmers with a golden light. The hilt is adorned with intricate carvings and a glowing gem at the pommel. The blade is said to be forged from the heart of a star, and its light can blind enemies and heal the wounded.", tag: "Game Assets 3D" },
-  
+
   { src: `${root_dir}Axe.webp`, title: "Double-Bladed Battle Axe", desc: "A fearsome double-bladed battle axe, with a central spike and a red-wrapped wooden handle. Ideal for close-quarters combat, this weapon's design is both intimidating and visually striking.", tag: "Weapon Sci-fi" },
   
   { src: `${root_dir}apple_things.webp`, title: "Apple Setup", desc: "A stylish assortment of Apple devices including an iPhone, iPad with apple pencil, Apple watch, AirPods, Apple air tag,and a classic camera, all meticulously organized on a smooth reflective surface.", tag: "Assets High-poly" },
@@ -74,10 +74,10 @@ let gallery_imgs = [
   
 { src: `${root_dir}Rolex.webp`, title: "Time Suspended", desc: "A Rolex Submariner watch seemingly defying gravity, hovering between two cylindrical magnetic platforms. The watch's black dial and polished steel case are beautifully illuminated, highlighting its intricate design and luxurious craftsmanship. The image creates a sense of mystery and intrigue, as if the watch is frozen in time.", tag: "3D Models Sci-fi" },
 
-{ src: `${root_dir}Camera.webp`, title: "Lens of Possibilities", desc: "A Canon EOS 5D Mark IV camera surrounded by a variety of interchangeable lenses, all suspended in mid-air against a dark background. The image captures the versatility and creativity of photography, showcasing the different perspectives and focal lengths that can be achieved with a single camera body.", tag: "Models 3D Sci-fi" },
+{ src: `${root_dir}BedRoom.webp`, title: "BedRoom [Isometric]", desc: "A minimalist bedroom, bathed in soft blue hues, offers a tranquil escape with its clean lines, comfortable bedding,a prayer Jainamaj, and a touch of oriental charm.", tag: "Assets High-poly Isometric" },
   
-{ src: `${root_dir}Headphone.webp`, title: "Tech and Treasure", desc: "A laptop with a vibrant, colorful display sits open on a desk, illuminated by the surrounding neon lights. Next to it lies a worn, leather-bound book titled 'The Treasure,' hinting at a hidden adventure. A pair of stylish headphones with a rainbow-colored LED strip rests nearby, ready to immerse the user in a world of music or gaming.", tag: "3D Models Sci-fi" },
-
+{ src: `${root_dir}Yellow_car_studio.webp`, title: "Volvo P1800 [Isometric]", desc: "A Volvo P1800 in a futuristic yellow studio, highlighting the timeless charm of vintage automotive design under modern lighting.", tag: "Assets High-poly Isometric" },
+  
 { src: `${root_dir}Playstation5.webp`, title: "Heart of Gaming", desc: "A sleek, white PlayStation 5 console stands tall against a dark background, illuminated by a blue light. A matching DualSense controller rests nearby, showcasing the console's futuristic design and cutting-edge technology. The image evokes a sense of excitement and anticipation for the next generation of gaming experiences.", tag: "Models Assets 3D" },
   
 { src: `${root_dir}chat_coffee.webp`, title: "Meeting of Minds", desc: "A minimalist scene featuring two modern chairs facing a small, square table on a checkered floor. A laptop, notebook, phone, and coffee cups are arranged on the table, suggesting a productive meeting or brainstorming session. The clean lines and neutral colors create a calm and focused atmosphere.", tag: "Models" },
@@ -92,7 +92,7 @@ let gallery_imgs = [
 
 { src: `${root_dir}Surface_back.webp`, title: "A Modern Masterpiece: Microsoft Surface Pro 4", desc: "This sleek and versatile Surface Pro 4 tablet, showcased in a minimalist gym setting, seamlessly blends power and portability. Its powerful processor and stunning display make it ideal for work, play, and everything in between. The iconic Microsoft logo adorns the back, a testament to its quality and innovation.", tag: "Untextured Weapon Sci-fi" },
 
-{ src: `${root_dir}fire_grenade.webp`, title: "Fire balls", desc: "A futuristic weapon, the sci-fi fire grenade emits a concentrated burst of plasma energy upon detonation. Its fiery blast can incinerate targets and ignite surrounding materials with incredible intensity. The grenade's casing is often made of a heat-resistant alloy, designed to withstand the extreme temperatures it generates.", tag: "Weapon Sci-fi" }
+// { src: `${root_dir}fire_grenade.webp`, title: "Fire balls", desc: "A futuristic weapon, the sci-fi fire grenade emits a concentrated burst of plasma energy upon detonation. Its fiery blast can incinerate targets and ignite surrounding materials with incredible intensity. The grenade's casing is often made of a heat-resistant alloy, designed to withstand the extreme temperatures it generates.", tag: "Weapon Sci-fi" }
 
 ];
 
