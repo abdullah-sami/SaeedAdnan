@@ -569,7 +569,6 @@ main .section_2 .marketplace ul li a span p{
     /* flex-basis: 30%; */
     justify-content: space-between;
     
-    
 }
 
 .gallery_viewer_section_left .gallery_viewer_desc_container #gallery_viewer_desc_ttl{
@@ -580,6 +579,10 @@ main .section_2 .marketplace ul li a span p{
 .gallery_viewer_section_left .gallery_viewer_desc_container #gallery_viewer_desc{
     font-size: 1.1vw;
     font-family: var(--gemunu);
+    
+    overflow-y: scroll !important;
+    
+    max-height: 5vh;
     
 }
 
