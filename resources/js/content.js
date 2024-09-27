@@ -1,0 +1,40 @@
+const root_dir = "resources/img/artworks/";
+
+let gallery_imgs = [
+
+  { src: `${root_dir}1.jpg`, title: "Image 1", desc: "Description 1", tag: "Models Low-poly" },
+  { src: `${root_dir}2.jpg`, title: "Image 2", desc: "Description 2", tag: "Assets High-poly" },
+  { src: `${root_dir}3.jpg`, title: "Image 3", desc: "Description 3", tag: "Game Assets 3D" },
+  { src: `${root_dir}4.jpg`, title: "Image 4", desc: "Description 4", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}5.jpg`, title: "Image 5", desc: "Description 5", tag: "Models Low-poly" },
+  { src: `${root_dir}6.jpg`, title: "Image 6", desc: "Description 6", tag: "Assets High-poly" },
+  { src: `${root_dir}7.jpg`, title: "Image 7", desc: "Description 7", tag: "Game Assets 3D" },
+  { src: `${root_dir}8.jpg`, title: "Image 8", desc: "Description 8", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}9.jpg`, title: "Image 9", desc: "Description 9", tag: "Assets High-poly" },
+  { src: `${root_dir}10.jpg`, title: "Image 10", desc: "Description 10", tag: "Game Assets 3D" },
+  { src: `${root_dir}11.jpg`, title: "Image 11", desc: "Description 11", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}12.jpg`, title: "Image 12", desc: "Description 12", tag: "Models Low-poly" },
+  { src: `${root_dir}13.jpg`, title: "Image 13", desc: "Description 13", tag: "Assets High-poly" },
+  { src: `${root_dir}14.jpg`, title: "Image 14", desc: "Description 14", tag: "Game Assets 3D" },
+  { src: `${root_dir}15.jpg`, title: "Image 15", desc: "Description 15", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}16.jpg`, title: "Image 16", desc: "Description 16", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}17.jpg`, title: "Image 17", desc: "Description 17", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}1.jpg`, title: "Image 1", desc: "Description 1", tag: "Models Low-poly" },
+  { src: `${root_dir}2.jpg`, title: "Image 2", desc: "Description 2", tag: "Assets High-poly" },
+  { src: `${root_dir}3.jpg`, title: "Image 3", desc: "Description 3", tag: "Game Assets 3D" },
+  { src: `${root_dir}4.jpg`, title: "Image 4", desc: "Description 4", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}5.jpg`, title: "Image 5", desc: "Description 5", tag: "Models Low-poly" },
+  { src: `${root_dir}6.jpg`, title: "Image 6", desc: "Description 6", tag: "Assets High-poly" },
+  { src: `${root_dir}7.jpg`, title: "Image 7", desc: "Description 7", tag: "Game Assets 3D" },
+  { src: `${root_dir}8.jpg`, title: "Image 8", desc: "Description 8", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}9.jpg`, title: "Image 9", desc: "Description 9", tag: "Assets High-poly" },
+  { src: `${root_dir}10.jpg`, title: "Image 10", desc: "Description 10", tag: "Game Assets 3D" },
+  { src: `${root_dir}11.jpg`, title: "Image 11", desc: "Description 11", tag: "Isometric Weapon Sci-fi" },
+  { src: `${root_dir}12.jpg`, title: "Image 12", desc: "Description 12", tag: "Models Low-poly" },
+  { src: `${root_dir}13.jpg`, title: "Image 13", desc: "Description 13", tag: "Assets High-poly" },
+  { src: `${root_dir}14.jpg`, title: "Image 14", desc: "Description 14", tag: "Game Assets 3D" },
+  { src: `${root_dir}15.jpg`, title: "Image 15", desc: "Description 15", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}16.jpg`, title: "Image 16", desc: "Description 16", tag: "Untextured Weapon Sci-fi" },
+  { src: `${root_dir}17.jpg`, title: "Image 17", desc: "Description 17", tag: "Untextured Weapon Sci-fi" }
+
+];

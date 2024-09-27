@@ -1,44 +1,18 @@
 
 
-
-/* universal */
-
-
-
-
-.border{
-    border-radius: 30px;
-    border: 4px solid var(--stroke);
-}
-
-:root{
-    --grad: linear-gradient( var(--bgmain) 20%, var(--bgmain) 40%, var(--bggrad));
-    --grad-reverse: linear-gradient( rgb(18, 18, 20) 15% ,  var(--bgmain) 40%,var(--bgmain) 20%);
-
-    --grad-right: linear-gradient(to right, var(--bggrad)  ,  var(--bgmain) ,var(--bgmain));
-    
-
-    --section-height: calc(100vh - 2vh - 2vw - 5vh);
-}
-
-
-
-
-
-
 /* ******    main   ****** */
 
 
 
 main{
-    width: 94vw;
+    width: 100vw;
     height: calc(100vh - 2vw);
-    padding: 2vw 3vw;
-    padding-right: 1vw;
+    padding: 2vw 0;
+    /* padding-right: 0; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: start;
 
 }
@@ -53,6 +27,7 @@ main{
 
 main section{
     height: var(--section-height);
+    margin-right: 25px;
 
 }
 
@@ -70,10 +45,12 @@ main section{
 
 
 main .section_1{
-    width: calc((96vw * .36) - 50px);
+    width: calc((100vw * .38) - 50px);
     min-width: 400px;
 
     /* overflow: hidden; */
+    display: flex;
+    justify-content: flex-end;
     
 }
 
@@ -87,37 +64,40 @@ main .section_1{
 
 main .section_1 .social{
     position: absolute;
-    top: 35%;
+    top: 30%;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transform: translateX(-70%);
+    transform: translateX(30%);
     background: var(--grad-reverse);
     padding: 2vh 1px;
-    height: 30vh;
+    height: 35vh;
     align-items: center;
-    border-radius: 25px;
+    border-radius: calc(100vw / 1920 * 25);
     
+
+    overflow: hidden;
+
     border: 3.5px solid var(--stroke);
     
 }
 
 main .section_1 .social span a{
-    padding: 20px 10px;
+    padding: calc(100vw / 1920 * 20) calc(100vw / 1920 * 15);
     color: var(--txt);
 }
 
 main .section_1 .social span a img{
-    max-width: 40px;
-    width: calc(100vw / 1920 * 40);
-    height: calc(100vw / 1920 * 40);
-    transform: scale(1);
-    padding: 5px;
-}
-#fb-ico{    
     max-width: 44px;
     width: calc(100vw / 1920 * 44);
     height: calc(100vw / 1920 * 44);
+    transform: scale(1);
+}
+#fb-ico{    
+    max-width: 50px;
+    width: calc(100vw / 1920 * 50);
+    height: calc(100vw / 1920 * 50);
 }
 main .section_1 .social span a img:hover{
     transform: translateX(5px);
@@ -136,6 +116,7 @@ main .section_1 .social span a img:hover{
 
 
 main .section_1 .profile{
+    width: 85%;
     background: var(--grad);
     height: inherit;
     padding-bottom: 2vh;
@@ -145,6 +126,8 @@ main .section_1 .profile{
     align-items: center;
     justify-content: space-around;
     height: calc((var(--section-height) - 2vh - 8px));
+
+    overflow: hidden;
 }
 
 
@@ -182,7 +165,9 @@ main .section_1 .profile .desc::after{
     content: "";
     display: block;
     width: 50%;
-    height: calc(100vw / 1920 * 15);
+    height: .7vw;
+    min-height: 5px;
+    max-height: 15px;
     background: var(--accent1);
     border-radius: 5px 50px 5px 50px;
 }
@@ -225,7 +210,7 @@ main .section_1 .profile .bio p{
 
 
 main .section_2{
-    width: calc((96vw * .64) - 50px);  
+    width: calc((100vw * .62) );  
     min-width: 400px;  
     
     display: flex;
@@ -244,7 +229,7 @@ main .section_2{
 
 
 main .section_2 .gallery{
-    height: calc((var(--section-height) * .66) - 10px);
+    height: calc((var(--section-height) * .7) - 10px);
     display: flex;
     flex-direction: column;
     background: var(--grad-right);
@@ -283,7 +268,7 @@ main .gallery_header .gallery_open_btn {
 
     filter: brightness(.5);
     text-align: center;
-    cursor: pointer;
+    cursor: url('../img/pointer.png'), auto;
     
 }
 
@@ -329,24 +314,32 @@ main .section_2 .gallery .gallery_window .gallery_itms{
     align-items: center;
     border: 3px solid var(--stroke);
     
-    /* object-fit: contain; */
+    
 
     border-radius: 10px;    
     box-shadow: inset 0 0 5px 1px #000;
     
 }
+main .section_2 .gallery .gallery_window .gallery_itms:nth-child(9), main .section_2 .gallery .gallery_window .gallery_itms:nth-child(10){
+    display: none;
+    
+}
+
+
 main .section_2 .gallery .gallery_window .gallery_itms img{
     width: 100%;
     height: auto;
-    cursor: pointer;
-    transform: scale(1.1);
+    cursor: url('../img/pointer.png'), auto;
+    transform: scale(1.4);
     transition: .4s all;
+
+    
     
 }
 
 main .section_2 .gallery .gallery_window .gallery_itms img:hover{
-    cursor: pointer;
-    transform: scale(1);
+    
+    transform: scale(1.3);
     filter: brightness(.6);
 }
 
@@ -370,11 +363,16 @@ main .section_2 .gallery .gallery_window .gallery_itms img:hover{
 
 
 main .section_2 .marketplace{
-    height: calc((var(--section-height) * .33) - 10px);
+    height: calc((var(--section-height) * .28) - 10px);
     display: flex;
     background: var(--grad-right);
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+
+    overflow: hidden;
+
+    
 }
 
 
@@ -383,12 +381,12 @@ main .section_2 .marketplace p{
     font-family: var(--electro);
     font-size: 1.5vw;
     width: 90%;
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 
 
 main .section_2 .marketplace ul{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -396,7 +394,7 @@ main .section_2 .marketplace ul{
 
 main .section_2 .marketplace ul li{
     list-style-type: none;
-    flex-basis: 20%;
+    flex-basis: 15%;
     overflow: hidden;
 }
 main .section_2 .marketplace ul li a span{
@@ -409,6 +407,7 @@ main .section_2 .marketplace ul li a span{
 
 main .section_2 .marketplace ul li a span img{
     height: 5vw;
+    max-height: 12vh;
     width: auto;
     border-radius: 5px;
     filter: grayscale(0);
@@ -426,6 +425,7 @@ main .section_2 .marketplace ul li a span p{
     text-align: center;
     margin: 1vh 0;
     font-size: 1.3vw;
+    letter-spacing: 1px;
 }
 
 
@@ -458,7 +458,7 @@ main .section_2 .marketplace ul li a span p{
 .gallery_viewer {
     /* display: flex; */
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -547,7 +547,7 @@ main .section_2 .marketplace ul li a span p{
     background: none;
     outline: none;
     border: none;
-    cursor: pointer;
+    cursor: url('../img/pointer.png'), auto;
     filter: brightness(.7);
 
     
@@ -566,7 +566,7 @@ main .section_2 .marketplace ul li a span p{
     padding: 20px 30px;
     color: var(--txt);
     
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     justify-content: space-between;
     
     
@@ -719,12 +719,14 @@ main .section_2 .marketplace ul li a span p{
 
 .gallery_viewer .gallery_viewer_section_right 
 .gallery_tags .gallery_tag{
-    min-width: max-content;
-    max-height: 40px;
+    min-width: max-content;    
+    height: max-content;
+
+
 }
 
 
-.gallery_tag_selected{
+.gallery_tag_selected {
     filter: brightness(1);
 }
 
@@ -782,7 +784,7 @@ main .section_2 .marketplace ul li a span p{
     display: block;
     object-fit: cover;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: url('../img/pointer.png'), auto;
 }
 .gallery_viewer_masonry_item video {
     width: 100%;
@@ -790,7 +792,7 @@ main .section_2 .marketplace ul li a span p{
     display: block;
     object-fit: cover;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: url('../img/pointer.png'), auto;
 }
 .gallery_viewer_masonry_item img:hover {
     
@@ -828,7 +830,7 @@ main .section_2 .marketplace ul li a span p{
     position: absolute;
     top: 20px;
     right: 20px;
-    cursor: pointer;
+    cursor: url('../img/pointer.png'), auto;
     padding: 1vw;
 }
 .gallery_viewer_close_btn img{

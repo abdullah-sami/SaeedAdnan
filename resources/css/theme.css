@@ -15,6 +15,20 @@
     --accent1: #A56300;
 
 
+
+
+    
+    --grad: linear-gradient( var(--bgmain) 20%, var(--bgmain) 40%, var(--bggrad));
+    --grad-reverse: linear-gradient( rgb(18, 18, 20) 15% ,  var(--bgmain) 40%,var(--bgmain) 20%);
+
+    --grad-right: linear-gradient(to right, var(--bggrad)  ,  var(--bgmain) ,var(--bgmain));
+    
+
+    --section-height: calc(100vh - 2vh - 2vw - 5vh);
+
+
+
+
 }
 
 html{
@@ -29,6 +43,8 @@ body{
     height: 100vh;
     overflow: hidden;
     scroll-behavior: smooth;
+
+    cursor: url('../img/cursor.png'), auto;
 }
 
 *{
@@ -41,17 +57,153 @@ body{
 
 
 
+img {
+  height: auto;
+  width: auto;
+}
+
+
+
 a{
     text-decoration: none;
+    cursor: url('../img/pointer.png'), auto;
 }
 
 button{
-    cursor: pointer;
+    cursor: url('../img/pointer.png'), auto;
 }
 
 
 
 
+
+
+
+
+.border{
+  border-radius: 1.5vw;
+  border: 4px solid var(--stroke);
+}
+
+
+
+
+
+
+
+
+
+  
+  .centerBike {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 26px;
+    margin-left: -12px;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  
+  #loop {
+    height: 100px;
+    width: 100px;
+    border: #bb5f27 solid 4px;
+    border-radius: 200px;
+  }
+  
+  #loop:before {
+    background: linear-gradient(to left, rgba(187, 95, 39, 0) 0%, rgba(187, 95, 39, 1) 30%, rgba(187, 95, 39, 1) 70%, rgba(187, 95, 39, 0) 100%);
+    content: "";
+    display: block;
+    height: 4px;
+    left: -100px;
+    position: relative;
+    top: 100px;
+    width: 300px;
+  }
+  
+  #bike-wrapper {
+    height: 108px;
+    width: 108px;
+    animation: drive 3s linear infinite;
+  }
+  
+  #bike {
+    height: 24px;
+    width: 25px;
+    background-image: url("../img/motorbike.png");
+  }
+  
+  @keyframes drive {
+    0% {
+      
+      margin-left: -364px;
+      opacity: 0;
+    }
+    33.33% {
+      transform: rotate(0deg);
+      margin-left: -50px;
+      opacity: 1;
+    }
+    66.66% {
+      transform: rotate(-360deg);
+      margin-left: -50px;
+      opacity: 1;
+    }
+    100% {
+      margin-left: 264px;
+      transform: rotate(-360deg);
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 1s;
+  transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cursor {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(219, 219, 219, 0.56);
+  background: none;
+
+  /* transition-delay: .1s; */
+
+  z-index: 9999999;
+
+  position: absolute;
+
+  pointer-events: none;
+}
 
 
 
@@ -93,12 +245,41 @@ button{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
   footer{
     width: 100vw;
     height: 4vh;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     background: #101010;
 
