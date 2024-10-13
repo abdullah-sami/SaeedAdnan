@@ -1,6 +1,6 @@
 const root_dir = "resources/img/artworks/";
 
-let gallery_imgs = [
+var gallery_imgs = [
   
   { src: `${root_dir}android_things.webp`, title: "Tech setup", desc: "A sleek collection of modern gadgets (not for a apple user) including a tablet, smartwatches, camera, earbuds, and a gaming phone, neatly arranged on a reflective surface.", tag: "Models Low-poly" },
   
@@ -66,7 +66,7 @@ let gallery_imgs = [
   
 { src: `${root_dir}car_2.webp`, title: "1972 Datsun 240K GT", desc: "A classic 1972 Datsun 240K GT, showcased in a minimalist, dimly lit studio. The car's sleek lines and timeless design are highlighted by the dark, reflective surface it's parked on. The 'Hakosuka' nickname, derived from the Japanese word 'hako' meaning 'box,' is a nod to the car's distinctive boxy shape.", tag: "High-poly Sci-fi" },
   
-{ src: `${root_dir}Portion.webp`, title: "Elixir of Eternal Youth", desc: "A small, round glass vial filled with a vibrant purple liquid that bubbles and shimmers slightly. Sealed with a cork, the vial is said to contain a powerful elixir capable of granting eternal youth to anyone who drinks it. The liquid is rumored to have been created by ancient alchemists using rare and magical ingredients.", tag: "3D Models" },
+{ src: `${root_dir}Potion.webp`, title: "Elixir of Eternal Youth", desc: "A small, round glass vial filled with a vibrant purple liquid that bubbles and shimmers slightly. Sealed with a cork, the vial is said to contain a powerful elixir capable of granting eternal youth to anyone who drinks it. The liquid is rumored to have been created by ancient alchemists using rare and magical ingredients.", tag: "3D Models" },
   
 { src: `${root_dir}Chair.webp`, title: "Husk Chair", desc: " A modern and stylish armchair featuring a unique, organic shape with soft, quilted cushions. The chair's base is a sleek, white pedestal with a rotating swivel mechanism, allowing for easy movement. The cushions are upholstered in a neutral gray fabric, providing a comfortable and inviting seating experience.", tag: "3D Models" },
 

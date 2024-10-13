@@ -104,10 +104,9 @@ button{
   
   .center {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    
   }
   
   #loop {
@@ -143,21 +142,21 @@ button{
   @keyframes drive {
     0% {
       
-      margin-left: -364px;
+      margin-left: -314px;
       opacity: 0;
     }
     33.33% {
       transform: rotate(0deg);
-      margin-left: -50px;
+      margin-left: 0px;
       opacity: 1;
     }
     66.66% {
       transform: rotate(-360deg);
-      margin-left: -50px;
+      margin-left: 0px;
       opacity: 1;
     }
     100% {
-      margin-left: 264px;
+      margin-left: 314px;
       transform: rotate(-360deg);
       opacity: 0;
     }
@@ -212,8 +211,8 @@ button{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     max-width: 10px;
     max-height: 10px;
     

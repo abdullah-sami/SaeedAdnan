@@ -11,7 +11,7 @@
     <title>Saeed Adnan</title>
 
 
-
+    
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Electrolize&family=Gemunu+Libre:wght@200..800&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -22,6 +22,11 @@
     </noscript>
 
     <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+
+
+    <script src="resources/js/content.js"></script>
+
+
 
     <style>
         .preloader {
@@ -38,7 +43,7 @@
             overflow: hidden;
 
 
-            display: block;
+            display: flex;
 
 
 
@@ -113,6 +118,7 @@
 
             <div class="profile border">
                 <img src="resources/img/profile_pic.jpg" alt="" class="profile_pic">
+                
                 <div class="desc">
                     <p class="profile_ttl">I'm</p>
                     <h1 class="profile_name">Saeed Adnan</h1>
@@ -219,8 +225,8 @@
                     <li>
                         <a href="">
                             <span>
-                                <img src="resources/img/sketchfab.png" alt="" loading="lazy">
-                                <p>Sketchfab</p>
+                                <img src="resources/img/behance.png" alt="" loading="lazy">
+                                <p>Behance</p>
                             </span>
                         </a>
                     </li>
@@ -250,7 +256,8 @@
 
             <div class="gallery_viewer_img_container">
 
-                <img src="resources/img/artworks/shield.webp" alt="" id="gallery_viewer_img" loading="lazy">
+                <img src="" alt="" id="gallery_viewer_img" loading="lazy">
+                <script>document.querySelector("#gallery_viewer_img").src=(gallery_imgs[2].src);</script>
 
                 <button class="gallery_viewer_img_full_screen_btn" id="gallery_viewer_img_full_screen_btn"
                     onclick="gallery_viewer_full_screen();">
@@ -261,14 +268,17 @@
 
             <div class="gallery_viewer_desc_container">
 
-                <h2 id="gallery_viewer_desc_ttl">Shields</h2>
+                <h2 id="gallery_viewer_desc_ttl">
+                    <script>document.write(gallery_imgs[2].title);</script>
+                </h2>
 
-                <p id="gallery_viewer_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quidem atque
-                    pariatur!</p>
+                <p id="gallery_viewer_desc"><script>document.write(gallery_imgs[2].desc);</script></p>
 
                 <span id="gallery_viewer_desc_container_tags">
                     <button class="gallery_viewer_desc_tag img_tag_btn" data-img-tag="Assets">Assets</button>
                     <button class="gallery_viewer_desc_tag img_tag_btn" data-img-tag="High-poly">High-poly</button>
+                    <button class="gallery_viewer_desc_tag img_tag_btn" data-img-tag="Weapon">Weapon</button>
+                    <button class="gallery_viewer_desc_tag img_tag_btn" data-img-tag="Models">Models</button>
                 </span>
 
             </div>
@@ -286,7 +296,7 @@
 
         <section class="gallery_viewer_section gallery_viewer_section_right">
 
-            <div class="gallery_tags">
+            <div class="gallery_tags" id="gallery_tags_drag">
 
                 <button class="gallery_tag img_tag_btn gallery_tag_selected" id="gallery_tag"
                     data-img-tag="">All</button>
@@ -329,7 +339,7 @@
 
 
 
-    <footer>
+    <footer style="display: none;">
 
 
         <div class="credits">© all rights ressesrved. By <a href="http://abdullahsami.rf.gd">It's_Me!</a></div>
@@ -341,8 +351,7 @@
 
 
 
-    <script src="resources/js/content.js"></script>
-    <script src="resources/js/content.man.js"></script>
+    <script src="resources/js/content.man.js"></script> 
     <script src="resources/js/app.js"></script>
     <script src="resources/js/tag.man.js"></script>
     <script src="resources/js/animation.js"></script>

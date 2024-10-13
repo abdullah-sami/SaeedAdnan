@@ -1,8 +1,3 @@
-
-
-
-
-
 function import_contents() {
  
 
@@ -90,17 +85,20 @@ function load_masonry_gallery() {
   gallery_imgs.forEach(function(masonry_gallery_itms) {
 
 
+    
     if(active_tag == ""){
+
       
-      masonry_gallery_content += `<div class="gallery_viewer_masonry_item masonry-item"><img src="${masonry_gallery_itms.src}" alt="" data-img-ttl="${masonry_gallery_itms.title}" data-img-desc="${masonry_gallery_itms.desc}" data-img-tag="${masonry_gallery_itms.tag}" loading="lazy"></div>`;
+      masonry_gallery_content += `<div class="gallery_viewer_masonry_item masonry-item"><span class='img_load_anim' style='--t_d: ${Math.random()}s;'></span><img src="${masonry_gallery_itms.src}" alt="" data-img-ttl="${masonry_gallery_itms.title}" data-img-desc="${masonry_gallery_itms.desc}" data-img-tag="${masonry_gallery_itms.tag}" loading="lazy"></div>`;
 
     }
     else if(((masonry_gallery_itms.tag).split(" ")).includes(active_tag)){
 
-      masonry_gallery_content += `<div class="gallery_viewer_masonry_item masonry-item"><img src="${masonry_gallery_itms.src}" alt="" data-img-ttl="${masonry_gallery_itms.title}" data-img-desc="${masonry_gallery_itms.desc}" data-img-tag="${masonry_gallery_itms.tag}" loading="lazy"></div>`;
+      masonry_gallery_content += `<div class="gallery_viewer_masonry_item masonry-item"><span class='img_load_anim' style='--t_d: ${Math.random()}s;'></span><img src="${masonry_gallery_itms.src}" alt="" data-img-ttl="${masonry_gallery_itms.title}" data-img-desc="${masonry_gallery_itms.desc}" data-img-tag="${masonry_gallery_itms.tag}" loading="lazy"></div>`;
 
-    } else{
-      masonry_gallery_content += "";
+    } 
+    else{
+        masonry_gallery_content += "";
     }
 
 
@@ -116,7 +114,20 @@ function load_masonry_gallery() {
 
 
 
+
+
   document.querySelectorAll('.gallery_viewer_masonry_item img').forEach(function (img) {
+
+
+
+    img.addEventListener('load', function () {
+      setTimeout(function () {
+        img.previousElementSibling.classList.remove('img_load_anim');
+
+      }, (1500 + (Math.random()*1000)));
+    });
+
+
 
     img.addEventListener('click', function () {
       

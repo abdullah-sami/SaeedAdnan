@@ -410,13 +410,13 @@ main .section_2 .marketplace ul li a span img{
     max-height: 12vh;
     width: auto;
     border-radius: 5px;
-    filter: grayscale(0);
+    filter: brightness(.5);
 }
 main .section_2 .marketplace ul li a span img:hover{
     height: 5vw;
     width: auto;
     border-radius: 5px;
-    filter: grayscale(.5);
+    filter: brightness(.8);
 }
 
 
@@ -474,10 +474,10 @@ main .section_2 .marketplace ul li a span p{
 
 
 .gallery_viewer .gallery_viewer_section {
-    width: 35vw;
-    height: 80vh;
+    width: 45vw;
+    height: 85vh;
     overflow: hidden;
-    background: var(--grad-reverse)
+    background: var(--bgmain);
     
 }
 
@@ -491,7 +491,7 @@ main .section_2 .marketplace ul li a span p{
 
 .gallery_viewer_section_left .gallery_viewer_img_container{
     width: 100%;
-    height: 70% ;
+    height: 60% ;
     /* background: var(--grad); */
     display: flex;
 
@@ -536,7 +536,7 @@ main .section_2 .marketplace ul li a span p{
   
   .gallery_viewer_img_full_screen_btn{
     position: absolute;
-    bottom: 2vw;
+    bottom: 1vw;
     right: 2vw;
     display: flex;
     justify-content: center;
@@ -568,6 +568,7 @@ main .section_2 .marketplace ul li a span p{
     
     /* flex-basis: 30%; */
     justify-content: space-between;
+    overflow-y: scroll;
     
 }
 
@@ -578,11 +579,11 @@ main .section_2 .marketplace ul li a span p{
 }
 .gallery_viewer_section_left .gallery_viewer_desc_container #gallery_viewer_desc{
     font-size: 1.1vw;
-    font-family: var(--gemunu);
+    font-family: var(--electro);
     
     overflow-y: scroll !important;
     
-    max-height: 5vh;
+    
     
 }
 
@@ -614,6 +615,12 @@ main .section_2 .marketplace ul li a span p{
 }
 
 
+.gallery_viewer_section_left .gallery_viewer_desc_container #gallery_viewer_desc_container_tags{
+    margin-top: .5vh;
+}
+.gallery_viewer_section_left .gallery_viewer_desc_container .img_tag_btn{
+    font-size: 1vw;
+}
 
 
 
@@ -695,6 +702,7 @@ main .section_2 .marketplace ul li a span p{
 
 
 .gallery_viewer .gallery_viewer_section_right {
+    width: 35vw;
     background: var(--grad);
     position: relative;
     display: flex;
@@ -741,11 +749,6 @@ main .section_2 .marketplace ul li a span p{
 
 
 
-
-
-
-
-
 /* ******   masonry  |  gallery viewer   ****** */
 
 .masonry_gallery_container{
@@ -775,10 +778,37 @@ main .section_2 .marketplace ul li a span p{
     overflow: hidden;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
 }
 .gallery_viewer_masonry_item:hover {
     transform: translateY(-3px);
 }
+
+
+
+.img_load_anim{
+    display: flex;
+    position: absolute;
+    background: rgb(40, 40, 40);
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    transition: .2s all ease;
+    animation: img_load_anim 2s infinite;
+    animation-delay: calc(1s - var(--t_d));
+}
+@keyframes img_load_anim{
+    0%{
+        filter: brightness(1);
+    }
+    50%{
+        filter: brightness(.5);
+    }
+    100%{
+        filter: brightness(1);
+    }
+}
+
 
 
 .gallery_viewer_masonry_item img {
@@ -789,6 +819,9 @@ main .section_2 .marketplace ul li a span p{
     border-radius: 8px;
     cursor: url('../img/pointer.png'), auto;
 }
+
+
+
 .gallery_viewer_masonry_item video {
     width: 100%;
     height: auto;

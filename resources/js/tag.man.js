@@ -30,6 +30,7 @@ function fetch_tags() {
 function assign_tag(){
     document.querySelectorAll(".gallery_tag_selected").forEach(function (active_btn) {
         active_btn.classList.remove("gallery_tag_selected");
+        active_btn.disabled = false;
 
     });
 
@@ -38,6 +39,7 @@ function assign_tag(){
         if ((btn.getAttribute("data-img-tag").split(" ")).includes(active_tag)) {
 
             btn.classList.add("gallery_tag_selected");
+            btn.disabled = true;
 
         }
 
