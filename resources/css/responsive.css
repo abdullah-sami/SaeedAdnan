@@ -138,7 +138,7 @@ main .section_1 .profile{
 main .section_1 .profile .profile_pic{
     margin-right: 15vw;
     margin-bottom: 15vh;
-    width: 20vw;
+    width: 22vw;
         
 }
 main .section_1 .profile .desc{
@@ -208,9 +208,17 @@ main .section_2 .gallery{
     height: calc((47vh * .60) - 10px);    
 }
 
+main .section_2 .gallery .gallery_header {
+    margin: 0;
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
 main .section_2 .gallery .gallery_header h2{
     font-size: 3vw;
-    
+       
 }
 
 main .section_2 .gallery .gallery_header .gallery_open_btn{
@@ -226,6 +234,13 @@ main .section_2 .gallery .gallery_window .gallery_itms:nth-child(9), main .secti
 
 main .section_2 .gallery .gallery_window .gallery_itms{
     flex-basis: 18%;
+    border: none;
+    height: 8vh;
+    
+    
+}
+main .section_2 .gallery .gallery_window .gallery_itms img{
+    height: 100%;
     
 }
 
@@ -305,6 +320,8 @@ main .section_2 .marketplace .marketplaces li a span p{
 }
 .gallery_viewer .gallery_viewer_section_left #gallery_viewer_desc{
     font-size: 2vw;
+    
+    max-height: 6.5vh;
 }
 
 

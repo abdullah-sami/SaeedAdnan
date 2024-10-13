@@ -32,9 +32,16 @@ const positionElement = (e) => {
 
 window.addEventListener("mousemove", positionElement);
 
+window.addEventListener("click", function(){
+  cursorBall.style.border = "2px solid rgba(227, 61, 61, 0.56)";
 
+  setTimeout(function() {
 
+    cursorBall.style.border = "2px solid rgba(219, 219, 219, 0.56)";
 
+  }, 200);
+
+});
 
 
 
